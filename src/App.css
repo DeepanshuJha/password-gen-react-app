@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    min-height: fit-content;
+    margin: 10% 30%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+
+    -webkit-box-shadow: -2px 0px 11px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 11px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 0px 11px -5px rgba(0,0,0,0.75);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-control{
+    margin-left: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;    
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color:#f08446;
+    color: #FFF;
+
+    -webkit-box-shadow: -2px 0px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 11px -4px rgba(0,0,0,0.75);
+    box-shadow: -2px 0px 11px -4px rgba(0,0,0,0.75);
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+    background-color:#f06616;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
+
+input{
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+
+
