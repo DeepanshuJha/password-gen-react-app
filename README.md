@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img src="capture.png" style="display:block;margin-left: auto;margin-right: auto; width: 50%;">
+![Password App Screenshot](capture.png)
 
 
 ## Available Scripts
